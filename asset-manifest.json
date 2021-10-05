@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Incubator-Tests-Monday-Counter/static/css/main.988ca845.chunk.css",
+    "main.js": "/Incubator-Tests-Monday-Counter/static/js/main.47f0ac83.chunk.js",
+    "main.js.map": "/Incubator-Tests-Monday-Counter/static/js/main.47f0ac83.chunk.js.map",
+    "runtime-main.js": "/Incubator-Tests-Monday-Counter/static/js/runtime-main.e26c995a.js",
+    "runtime-main.js.map": "/Incubator-Tests-Monday-Counter/static/js/runtime-main.e26c995a.js.map",
+    "static/js/2.926e7534.chunk.js": "/Incubator-Tests-Monday-Counter/static/js/2.926e7534.chunk.js",
+    "static/js/2.926e7534.chunk.js.map": "/Incubator-Tests-Monday-Counter/static/js/2.926e7534.chunk.js.map",
+    "static/js/3.2bec85ed.chunk.js": "/Incubator-Tests-Monday-Counter/static/js/3.2bec85ed.chunk.js",
+    "static/js/3.2bec85ed.chunk.js.map": "/Incubator-Tests-Monday-Counter/static/js/3.2bec85ed.chunk.js.map",
+    "index.html": "/Incubator-Tests-Monday-Counter/index.html",
+    "static/css/main.988ca845.chunk.css.map": "/Incubator-Tests-Monday-Counter/static/css/main.988ca845.chunk.css.map",
+    "static/js/2.926e7534.chunk.js.LICENSE.txt": "/Incubator-Tests-Monday-Counter/static/js/2.926e7534.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e26c995a.js",
+    "static/js/2.926e7534.chunk.js",
+    "static/css/main.988ca845.chunk.css",
+    "static/js/main.47f0ac83.chunk.js"
+  ]
+}
