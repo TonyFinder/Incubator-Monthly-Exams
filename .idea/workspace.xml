@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69e077c8-d74c-4491-ad36-36cfd18219ac" name="Default Changelist" comment="Created and moved directories for each week exams">
-      <change afterPath="$PROJECT_DIR$/.idea/TestsByTheEndOfMonths.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/Monday/Components/Button/Button.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/Monday/Components/Button/Button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/Monday/Components/Counter/Counter.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/Monday/Components/Counter/Counter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +44,23 @@
       <recent name="D:\Incubator\Studying\Tests\MonthlyExams\src\MonthlyExams\Monday" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.deploy" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -69,8 +74,16 @@
       <workItem from="1633404763576" duration="3931000" />
       <workItem from="1633478448511" duration="85000" />
       <workItem from="1633478613142" duration="91000" />
-      <workItem from="1633478815271" duration="648000" />
+      <workItem from="1633478815271" duration="942000" />
     </task>
+    <task id="LOCAL-00001" summary="Created and moved directories for each week exams">
+      <created>1633479508689</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1633479508689</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
