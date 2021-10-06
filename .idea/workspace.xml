@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69e077c8-d74c-4491-ad36-36cfd18219ac" name="Default Changelist" comment="Updated Monday's task with Local Storage and useEffect">
-      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/Monday/Components/CounterDisplay/CounterDisplay.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/Monday/Components/CounterDisplay/CounterDisplay.tsx" afterDir="false" />
+    <list default="true" id="69e077c8-d74c-4491-ad36-36cfd18219ac" name="Default Changelist" comment="Added CounterDisplay component">
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/Button/Button.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/Button/Button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/Counter/Counter.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/Counter/Counter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/CounterDisplay/CounterDisplay.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/CounterDisplay/CounterDisplay.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/SetDisplay/SetDisplay.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/SetDisplay/SetDisplay.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Tuesday.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Tuesday.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MonthlyExams/Monday/Components/Counter/Counter.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonthlyExams/Monday/Components/Counter/Counter.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MonthlyExams/Monday/Components/Counter/Counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonthlyExams/Monday/Components/Counter/Counter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +40,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/MonthlyExams/Monday" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -42,6 +49,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Incubator\Studying\Tests\MonthlyExams\src\MonthlyExams\TuesdayFirstVersion" />
       <recent name="D:\Incubator\Studying\Tests\MonthlyExams\src\MonthlyExams\Monday\Components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -80,7 +88,7 @@
       <workItem from="1633404763576" duration="3931000" />
       <workItem from="1633478448511" duration="85000" />
       <workItem from="1633478613142" duration="91000" />
-      <workItem from="1633478815271" duration="7492000" />
+      <workItem from="1633478815271" duration="26091000" />
     </task>
     <task id="LOCAL-00001" summary="Created and moved directories for each week exams">
       <created>1633479508689</created>
@@ -103,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633485106164</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added CounterDisplay component">
+      <created>1633486566325</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1633486566325</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +140,7 @@
     <MESSAGE value="Created and moved directories for each week exams" />
     <MESSAGE value="Changed package.json file" />
     <MESSAGE value="Updated Monday's task with Local Storage and useEffect" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Monday's task with Local Storage and useEffect" />
+    <MESSAGE value="Added CounterDisplay component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added CounterDisplay component" />
   </component>
 </project>

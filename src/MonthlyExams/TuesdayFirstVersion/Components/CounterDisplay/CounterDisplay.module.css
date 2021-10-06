@@ -1,0 +1,10 @@
+.number {
+    font-size: 65px;
+    font-weight: bold;
+}
+
+.redNumber {
+    font-size: 65px;
+    font-weight: bold;
+    color: red;
+}
