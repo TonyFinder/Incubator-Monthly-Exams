@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Incubator-Tests-Monday-Counter/static/css/main.ce043d4b.chunk.css",
-    "main.js": "/Incubator-Tests-Monday-Counter/static/js/main.de13217f.chunk.js",
-    "main.js.map": "/Incubator-Tests-Monday-Counter/static/js/main.de13217f.chunk.js.map",
-    "runtime-main.js": "/Incubator-Tests-Monday-Counter/static/js/runtime-main.e26c995a.js",
-    "runtime-main.js.map": "/Incubator-Tests-Monday-Counter/static/js/runtime-main.e26c995a.js.map",
-    "static/js/2.926e7534.chunk.js": "/Incubator-Tests-Monday-Counter/static/js/2.926e7534.chunk.js",
-    "static/js/2.926e7534.chunk.js.map": "/Incubator-Tests-Monday-Counter/static/js/2.926e7534.chunk.js.map",
-    "static/js/3.2bec85ed.chunk.js": "/Incubator-Tests-Monday-Counter/static/js/3.2bec85ed.chunk.js",
-    "static/js/3.2bec85ed.chunk.js.map": "/Incubator-Tests-Monday-Counter/static/js/3.2bec85ed.chunk.js.map",
-    "index.html": "/Incubator-Tests-Monday-Counter/index.html",
-    "static/css/main.ce043d4b.chunk.css.map": "/Incubator-Tests-Monday-Counter/static/css/main.ce043d4b.chunk.css.map",
-    "static/js/2.926e7534.chunk.js.LICENSE.txt": "/Incubator-Tests-Monday-Counter/static/js/2.926e7534.chunk.js.LICENSE.txt"
+    "main.css": "/Incubator-Monthly-Exams/static/css/main.ce043d4b.chunk.css",
+    "main.js": "/Incubator-Monthly-Exams/static/js/main.de13217f.chunk.js",
+    "main.js.map": "/Incubator-Monthly-Exams/static/js/main.de13217f.chunk.js.map",
+    "runtime-main.js": "/Incubator-Monthly-Exams/static/js/runtime-main.5fd9c16f.js",
+    "runtime-main.js.map": "/Incubator-Monthly-Exams/static/js/runtime-main.5fd9c16f.js.map",
+    "static/js/2.926e7534.chunk.js": "/Incubator-Monthly-Exams/static/js/2.926e7534.chunk.js",
+    "static/js/2.926e7534.chunk.js.map": "/Incubator-Monthly-Exams/static/js/2.926e7534.chunk.js.map",
+    "static/js/3.2bec85ed.chunk.js": "/Incubator-Monthly-Exams/static/js/3.2bec85ed.chunk.js",
+    "static/js/3.2bec85ed.chunk.js.map": "/Incubator-Monthly-Exams/static/js/3.2bec85ed.chunk.js.map",
+    "index.html": "/Incubator-Monthly-Exams/index.html",
+    "static/css/main.ce043d4b.chunk.css.map": "/Incubator-Monthly-Exams/static/css/main.ce043d4b.chunk.css.map",
+    "static/js/2.926e7534.chunk.js.LICENSE.txt": "/Incubator-Monthly-Exams/static/js/2.926e7534.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e26c995a.js",
+    "static/js/runtime-main.5fd9c16f.js",
     "static/js/2.926e7534.chunk.js",
     "static/css/main.ce043d4b.chunk.css",
     "static/js/main.de13217f.chunk.js"
