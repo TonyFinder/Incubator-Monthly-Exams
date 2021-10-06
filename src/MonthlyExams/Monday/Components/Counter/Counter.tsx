@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import {Button} from '../Button/Button'
 import style from './Counter.module.css'
+import {CounterDisplay} from '../CounterDisplay/CounterDisplay';
 
 export const Counter = () => {
     let [inc, setInc] = useState<number>(0)
@@ -62,9 +63,7 @@ export const Counter = () => {
         <div className={style.back}>
             <div className={style.middle}>
                 <div className={style.counterField}>
-                    <div className={inc === 5 ? style.redNumber : style.number}>
-                        {inc}
-                    </div>
+                    <CounterDisplay counterNumber={inc}/>
                 </div>
                 <div className={style.buttonsField}>
                     <Button disable={disableInc} title="inc" callback={incFunction}/>

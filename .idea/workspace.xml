@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69e077c8-d74c-4491-ad36-36cfd18219ac" name="Default Changelist" comment="Changed package.json file">
-      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/Monday/Monday.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/Monday/Monday.tsx" afterDir="false" />
+    <list default="true" id="69e077c8-d74c-4491-ad36-36cfd18219ac" name="Default Changelist" comment="Updated Monday's task with Local Storage and useEffect">
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/Monday/Components/CounterDisplay/CounterDisplay.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/Monday/Components/CounterDisplay/CounterDisplay.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MonthlyExams/Monday/Components/Counter/Counter.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonthlyExams/Monday/Components/Counter/Counter.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MonthlyExams/Monday/Components/Counter/Counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonthlyExams/Monday/Components/Counter/Counter.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +80,7 @@
       <workItem from="1633404763576" duration="3931000" />
       <workItem from="1633478448511" duration="85000" />
       <workItem from="1633478613142" duration="91000" />
-      <workItem from="1633478815271" duration="6061000" />
+      <workItem from="1633478815271" duration="7492000" />
     </task>
     <task id="LOCAL-00001" summary="Created and moved directories for each week exams">
       <created>1633479508689</created>
@@ -97,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633479804859</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Updated Monday's task with Local Storage and useEffect">
+      <created>1633485106164</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1633485106164</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +124,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created and moved directories for each week exams" />
     <MESSAGE value="Changed package.json file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed package.json file" />
+    <MESSAGE value="Updated Monday's task with Local Storage and useEffect" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated Monday's task with Local Storage and useEffect" />
   </component>
 </project>
