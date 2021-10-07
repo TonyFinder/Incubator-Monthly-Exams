@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69e077c8-d74c-4491-ad36-36cfd18219ac" name="Default Changelist" comment="Added Tuesday's Exam. Not finished.">
+    <list default="true" id="69e077c8-d74c-4491-ad36-36cfd18219ac" name="Default Changelist" comment="Tuesday's Exam is finished. Some refactoring is needed.">
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/Input/Input.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/Input/Input.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/Counter/Counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/Counter/Counter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/CounterDisplay/CounterDisplay.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/CounterDisplay/CounterDisplay.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/CounterDisplay/CounterDisplay.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/CounterDisplay/CounterDisplay.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/SetDisplay/SetDisplay.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/SetDisplay/SetDisplay.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/SetDisplay/SetDisplay.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/SetDisplay/SetDisplay.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,8 +73,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.start" />
         <item itemvalue="npm.deploy" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -93,7 +91,7 @@
       <workItem from="1633404763576" duration="3931000" />
       <workItem from="1633478448511" duration="85000" />
       <workItem from="1633478613142" duration="91000" />
-      <workItem from="1633478815271" duration="48968000" />
+      <workItem from="1633478815271" duration="57794000" />
     </task>
     <task id="LOCAL-00001" summary="Created and moved directories for each week exams">
       <created>1633479508689</created>
@@ -130,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633525408795</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Tuesday's Exam is finished. Some refactoring is needed.">
+      <created>1633589808092</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1633589808092</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +159,7 @@
     <MESSAGE value="Updated Monday's task with Local Storage and useEffect" />
     <MESSAGE value="Added CounterDisplay component" />
     <MESSAGE value="Added Tuesday's Exam. Not finished." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Tuesday's Exam. Not finished." />
+    <MESSAGE value="Tuesday's Exam is finished. Some refactoring is needed." />
+    <option name="LAST_COMMIT_MESSAGE" value="Tuesday's Exam is finished. Some refactoring is needed." />
   </component>
 </project>

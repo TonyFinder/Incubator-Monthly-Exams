@@ -1,5 +1,6 @@
 import style from './SetDisplay.module.css'
-import {ChangeEvent} from 'react';
+import {useEffect, useState} from 'react';
+import {Input} from '../Input/Input';
 
 type SetDisplayPropsType = {
     start: number
@@ -9,37 +10,43 @@ type SetDisplayPropsType = {
 }
 
 export const SetDisplay = (props: SetDisplayPropsType) => {
-
-    const onChangeMax = (e: ChangeEvent<HTMLInputElement>) => {
-        props.onChangeMax(+e.currentTarget.value)
-    }
-    const onChangeStart = (e: ChangeEvent<HTMLInputElement>) => {
-        props.onChangeStart(+e.currentTarget.value)
-    }
-    const startInputBackground = () => {
-        if (props.start < 0 || props.max < props.start || props.start === props.max) {
-            return `${style.inputCorrection} ${style.redBackground}`
-        } else {
-            return style.inputCorrection
+    let [inputStyleMax, setInputStyleMax] = useState<string>(style.inputCorrection)
+    let [inputStyleStart, setInputStyleStart] = useState<string>(style.inputCorrection)
+    useEffect( () => {
+        if (props.max < props.start) {
+            setInputStyleMax(`${style.inputCorrection} ${style.redBackground}`)
+            setInputStyleStart(style.inputCorrection)
+            return
         }
-    }
-    const maxInputBackground = () => {
-        if (props.max < 0 || props.max < props.start || props.start === props.max) {
-            return `${style.inputCorrection} ${style.redBackground}`
-        } else {
-            return style.inputCorrection
+        if (props.max <= 0 && props.start > 0 && props.start !== props.max) {
+            setInputStyleMax(`${style.inputCorrection} ${style.redBackground}`)
+            setInputStyleStart(style.inputCorrection)
+            return
         }
-    }
+        if (props.max === props.start) {
+            setInputStyleMax(`${style.inputCorrection} ${style.redBackground}`)
+            setInputStyleStart(`${style.inputCorrection} ${style.redBackground}`)
+            return
+        }
+        if (props.start < 0 && props.max > 0) {
+            setInputStyleMax(style.inputCorrection)
+            setInputStyleStart(`${style.inputCorrection} ${style.redBackground}`)
+            return
+        }
+        if (props.start >= 0 && props.max > 0) {
+            setInputStyleMax(style.inputCorrection)
+            setInputStyleStart(style.inputCorrection)
+            return
+        }
+    }, [props.max, props.start])
 
     return (
         <div className={style.main}>
             <div className={style.fieldSeparate}>
-                <span className={style.number}>max value:</span>
-                <input className={maxInputBackground()} type={'number'} value={props.max} onChange={onChangeMax}/>
+                <Input name={"max value:"} value={props.max} onChangeCallback={props.onChangeMax} inputStyle={inputStyleMax}/>
             </div>
             <div className={style.fieldSeparate}>
-                <label className={style.number}>start value:</label>
-                <input className={startInputBackground()} type={'number'} value={props.start} onChange={onChangeStart}/>
+                <Input name={"start value:"} value={props.start} onChangeCallback={props.onChangeStart} inputStyle={inputStyleStart}/>
             </div>
         </div>
     )
