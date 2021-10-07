@@ -8,3 +8,14 @@
     font-weight: bold;
     color: red;
 }
+
+.setMessage {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.setMessageRed {
+    font-size: 17px;
+    font-weight: bold;
+    color: red;
+}

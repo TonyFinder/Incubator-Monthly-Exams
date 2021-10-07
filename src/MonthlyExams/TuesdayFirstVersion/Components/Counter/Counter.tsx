@@ -6,25 +6,74 @@ import {SetDisplay} from '../SetDisplay/SetDisplay';
 
 
 export const Counter = () => {
-    let [inc, setInc] = useState<number>(0)
-    let [start, setStart] = useState<number>(0)
-    let [max, setMax] = useState<number>(5)
+    // Set initial values
+    const incBegin = 0
+    const startBegin = 0
+    const maxBegin = 5
+
+    //All useState functions
+    let [inc, setInc] = useState<number>(incBegin)
+    let [start, setStart] = useState<number>(startBegin)
+    let [max, setMax] = useState<number>(maxBegin)
     let [disableInc, setDisableInc] = useState<boolean>(false)
     let [disableReset, setDisableReset] = useState<boolean>(true)
     let [disableSet, setDisableSet] = useState<boolean>(true)
+    let [error, setError] = useState<boolean>(false)
 
-    useEffect( () => {
-        let incTuesday = localStorage.getItem("incrementTuesday")
-        let maxValue = localStorage.getItem("maxValue")
-        let startValue = localStorage.getItem("startValue")
-        if (maxValue) setMax(JSON.parse(maxValue))
-        if (startValue) setStart(JSON.parse(startValue))
-        if (incTuesday) setInc(JSON.parse(incTuesday))
-        if (maxValue === incTuesday) {
-            setDisableInc(true)
-            setDisableReset(false)
-        }
-        if ((incTuesday !== maxValue) && (incTuesday !== startValue)) setDisableReset(false)
+    //Button setting functions. Active or disable
+    const setIncOnResetOn = () => {
+        setDisableInc(false)
+        setDisableReset(false)
+    }
+    const setIncOnResetOff = () => {
+        setDisableInc(false)
+        setDisableReset(true)
+    }
+    const setIncOffResetOn = () => {
+        setDisableInc(true)
+        setDisableReset(false)
+    }
+    const setIncOffResetOff = () => {
+        setDisableInc(true)
+        setDisableReset(true)
+    }
+    const setSetOn = () => {
+        setDisableSet(false)
+        setIncOffResetOff()
+    }
+    const setOffForAll = () => {
+        setIncOffResetOff()
+        setDisableSet(true)
+    }
+
+    //Checkin and correcting the button status for active or disable them
+    const buttonsSettingsForIncReset = () => {
+        let incrementTuesday = localStorage.getItem('incrementTuesday')
+        let startValue = localStorage.getItem('startValue')
+        let maxValue = localStorage.getItem('maxValue')
+        if ((incrementTuesday !== maxValue) && (incrementTuesday !== startValue)) setIncOnResetOn()
+        if (incrementTuesday === maxValue) setIncOffResetOn()
+        if (incrementTuesday === startValue) setIncOnResetOff()
+    }
+
+    //useEffect using after the app is updated
+    useEffect(() => {
+        let incrementTuesday = localStorage.getItem('incrementTuesday')
+        let startValue = localStorage.getItem('startValue')
+        let maxValue = localStorage.getItem('maxValue')
+
+        //Set the initial Local Storage data or set the updated values for useState
+        incrementTuesday
+            ? setInc(JSON.parse(incrementTuesday))
+            : localStorage.setItem('incrementTuesday', JSON.stringify(incBegin))
+        startValue
+            ? setStart(JSON.parse(startValue))
+            : localStorage.setItem('startValue', JSON.stringify(startBegin))
+        maxValue
+            ? setMax(JSON.parse(maxValue))
+            : localStorage.setItem('maxValue', JSON.stringify(maxBegin))
+
+        buttonsSettingsForIncReset()
     }, [])
 
     const incFunction = () => {
@@ -38,26 +87,57 @@ export const Counter = () => {
     }
     const resetFunction = () => {
         setInc(start)
-        setDisableInc(false)
-        setDisableReset(true)
+        setIncOnResetOff()
         localStorage.setItem('incrementTuesday', JSON.stringify(start))
     }
+
     const onChangeMax = (max: number) => {
         setMax(max)
-        setDisableSet(false)
+        let startValue = localStorage.getItem('startValue')
+        let maxValue = localStorage.getItem('maxValue')
+        if ((startValue === start.toString()) && (maxValue === max.toString())) {
+            buttonsSettingsForIncReset()
+            setDisableSet(true)
+            setError(false)
+            return
+        }
+        if (max <= 0 || max <= start || start < 0 || max === start) {
+            setError(true)
+            setOffForAll()
+            return
+        } else {
+            setDisableSet(false)
+            setIncOffResetOff()
+            setError(false)
+        }
     }
     const onChangeStart = (start: number) => {
         setStart(start)
-        setDisableSet(false)
+        let startValue = localStorage.getItem('startValue')
+        let maxValue = localStorage.getItem('maxValue')
+        if ((startValue === start.toString()) && (maxValue === max.toString())) {
+            buttonsSettingsForIncReset()
+            setDisableSet(true)
+            setError(false)
+            return
+        }
+        if (max <= 0 || max <= start || start < 0 || max === start) {
+            setError(true)
+            setOffForAll()
+            return
+        } else {
+            setDisableSet(false)
+            setIncOffResetOff()
+            setError(false)
+        }
     }
     const setFunction = () => {
-        localStorage.setItem("maxValue", JSON.stringify(max))
-        localStorage.setItem("startValue", JSON.stringify(start))
-        localStorage.setItem("incrementTuesday", JSON.stringify(start))
+        localStorage.setItem('maxValue', JSON.stringify(max))
+        localStorage.setItem('startValue', JSON.stringify(start))
+        localStorage.setItem('incrementTuesday', JSON.stringify(start))
         setInc(start)
         setDisableSet(true)
-        setDisableInc(false)
-        setDisableReset(true)
+        setIncOnResetOff()
 
     }
 
@@ -76,7 +156,7 @@ export const Counter = () => {
             <div className={style.back}>
                 <div className={style.middle}>
                     <div className={style.counterField}>
-                        <CounterDisplay counterNumber={inc} maxValue={max}/>
+                        <CounterDisplay counterNumber={inc} max={max} setMessage={disableSet} error={error}/>
                     </div>
                     <div className={style.buttonsField}>
                         <Button disable={disableInc} title="inc" callback={incFunction}/>
