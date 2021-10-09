@@ -19,6 +19,8 @@ export const Counter = () => {
     let [disableReset, setDisableReset] = useState<boolean>(true)
     let [disableSet, setDisableSet] = useState<boolean>(true)
     let [error, setError] = useState<boolean>(false)
+    //Show main or setting window
+    let [showMain, setShowMain] = useState<boolean>(true)
 
     //Button setting functions. Active or disable
     const setIncOnResetOn = () => {
@@ -44,9 +46,9 @@ export const Counter = () => {
 
     //Checkin and correcting the button status for active or disable them
     const buttonsSettingsForIncReset = () => {
-        let incrementTuesday = localStorage.getItem('incrementTuesday1')
-        let startValue = localStorage.getItem('startValue1')
-        let maxValue = localStorage.getItem('maxValue1')
+        let incrementTuesday = localStorage.getItem('incrementTuesday2')
+        let startValue = localStorage.getItem('startValue2')
+        let maxValue = localStorage.getItem('maxValue2')
         if ((incrementTuesday !== maxValue) && (incrementTuesday !== startValue)) setIncOnResetOn()
         if (incrementTuesday === maxValue) setIncOffResetOn()
         if (incrementTuesday === startValue) setIncOnResetOff()
@@ -54,20 +56,20 @@ export const Counter = () => {
 
     //useEffect using after the app is updated
     useEffect(() => {
-        let incrementTuesday = localStorage.getItem('incrementTuesday1')
-        let startValue = localStorage.getItem('startValue1')
-        let maxValue = localStorage.getItem('maxValue1')
+        let incrementTuesday = localStorage.getItem('incrementTuesday2')
+        let startValue = localStorage.getItem('startValue2')
+        let maxValue = localStorage.getItem('maxValue2')
 
         //Set the initial Local Storage data or set the updated values for useState
         incrementTuesday
             ? setInc(JSON.parse(incrementTuesday))
-            : localStorage.setItem('incrementTuesday1', JSON.stringify(incBegin))
+            : localStorage.setItem('incrementTuesday2', JSON.stringify(incBegin))
         startValue
             ? setStart(JSON.parse(startValue))
-            : localStorage.setItem('startValue1', JSON.stringify(startBegin))
+            : localStorage.setItem('startValue2', JSON.stringify(startBegin))
         maxValue
             ? setMax(JSON.parse(maxValue))
-            : localStorage.setItem('maxValue1', JSON.stringify(maxBegin))
+            : localStorage.setItem('maxValue2', JSON.stringify(maxBegin))
 
         buttonsSettingsForIncReset()
     }, [])
@@ -79,17 +81,17 @@ export const Counter = () => {
             setDisableInc(true)
             setInc(inc)
         } else setInc(inc)
-        localStorage.setItem('incrementTuesday1', JSON.stringify(inc))
+        localStorage.setItem('incrementTuesday2', JSON.stringify(inc))
     }
     const resetFunction = () => {
         setInc(start)
         setIncOnResetOff()
-        localStorage.setItem('incrementTuesday1', JSON.stringify(start))
+        localStorage.setItem('incrementTuesday2', JSON.stringify(start))
     }
 
     const onChangeHandler = (valueStart: number, valueMax: number) => {
-        let startValue = localStorage.getItem('startValue1')
-        let maxValue = localStorage.getItem('maxValue1')
+        let startValue = localStorage.getItem('startValue2')
+        let maxValue = localStorage.getItem('maxValue2')
         if ((startValue === valueStart.toString()) && (maxValue === valueMax.toString())) {
             buttonsSettingsForIncReset()
             setDisableSet(true)
@@ -116,27 +118,33 @@ export const Counter = () => {
         onChangeHandler(value, max)
     }
     const setFunction = () => {
-        localStorage.setItem('maxValue1', JSON.stringify(max))
-        localStorage.setItem('startValue1', JSON.stringify(start))
-        localStorage.setItem('incrementTuesday1', JSON.stringify(start))
+        localStorage.setItem('maxValue2', JSON.stringify(max))
+        localStorage.setItem('startValue2', JSON.stringify(start))
+        localStorage.setItem('incrementTuesday2', JSON.stringify(start))
         setInc(start)
         setDisableSet(true)
         setIncOnResetOff()
+        setShowMain(!showMain)
+    }
+
+    const changeWindowHandler = () => {
+        setShowMain(!showMain)
     }
 
     return (
         <div className={style.twoCounters}>
-            <div className={style.back}>
+            {!showMain && <div className={style.back}>
                 <div className={style.middle}>
                     <div className={style.counterField}>
                         <SetDisplay start={start} max={max} onChangeMax={onChangeMax} onChangeStart={onChangeStart}/>
                     </div>
                     <div className={style.buttonsField}>
                         <Button disable={disableSet} title="set" callback={setFunction}/>
+                        <Button disable={false} title="back" callback={changeWindowHandler}/>
                     </div>
                 </div>
-            </div>
-            <div className={style.back}>
+            </div>}
+            {showMain && <div className={style.back}>
                 <div className={style.middle}>
                     <div className={style.counterField}>
                         <CounterDisplay counterNumber={inc} max={max} setMessage={disableSet} error={error}/>
@@ -144,9 +152,10 @@ export const Counter = () => {
                     <div className={style.buttonsField}>
                         <Button disable={disableInc} title="inc" callback={incFunction}/>
                         <Button disable={disableReset} title="reset" callback={resetFunction}/>
+                        <Button disable={false} title="set" callback={changeWindowHandler}/>
                     </div>
                 </div>
-            </div>
+            </div>}
         </div>
     )
 }

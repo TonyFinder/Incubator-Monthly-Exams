@@ -1,12 +1,15 @@
 import React from 'react';
 import {Monday} from './MonthlyExams/Monday/Monday';
-import {Tuesday} from './MonthlyExams/TuesdayFirstVersion/Tuesday';
+import {TuesdayFirst} from './MonthlyExams/TuesdayFirstVersion/TuesdayFirst';
+import {TuesdaySecond} from './MonthlyExams/TuesdaySecondVersion/TuesdaySecond';
+
 
 function App() {
     return (
         <div>
             <Monday/>
-            <Tuesday/>
+            <TuesdayFirst/>
+            <TuesdaySecond/>
         </div>
     )
 }

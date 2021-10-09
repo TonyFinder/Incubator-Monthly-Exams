@@ -2,9 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="69e077c8-d74c-4491-ad36-36cfd18219ac" name="Default Changelist" comment="Tuesday's Exam. Finished with refactoring.">
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdaySecondVersion/Components/Button/Button.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdaySecondVersion/Components/Button/Button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdaySecondVersion/Components/Counter/Counter.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdaySecondVersion/Components/Counter/Counter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdaySecondVersion/Components/CounterDisplay/CounterDisplay.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdaySecondVersion/Components/CounterDisplay/CounterDisplay.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdaySecondVersion/Components/Input/Input.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdaySecondVersion/Components/Input/Input.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdaySecondVersion/Components/SetDisplay/SetDisplay.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdaySecondVersion/Components/SetDisplay/SetDisplay.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdaySecondVersion/TuesdaySecond.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdaySecondVersion/TuesdaySecond.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MonthlyExams/Monday/Components/Counter/Counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonthlyExams/Monday/Components/Counter/Counter.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/Counter/Counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/Counter/Counter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/SetDisplay/SetDisplay.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/SetDisplay/SetDisplay.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Tuesday.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/TuesdayFirst.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Tuesday.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/TuesdayFirst.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/MonthlyExams/TuesdaySecondVersion" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -40,6 +55,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Incubator\Studying\Tests\MonthlyExams\src\MonthlyExams\TuesdaySecondVersion" />
       <recent name="D:\Incubator\Studying\Tests\MonthlyExams\src\MonthlyExams\TuesdayFirstVersion" />
       <recent name="D:\Incubator\Studying\Tests\MonthlyExams\src\MonthlyExams\Monday\Components" />
     </key>
@@ -90,7 +106,7 @@
       <workItem from="1633404763576" duration="3931000" />
       <workItem from="1633478448511" duration="85000" />
       <workItem from="1633478613142" duration="91000" />
-      <workItem from="1633478815271" duration="62950000" />
+      <workItem from="1633478815271" duration="66269000" />
     </task>
     <task id="LOCAL-00001" summary="Created and moved directories for each week exams">
       <created>1633479508689</created>
@@ -141,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633607831094</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Tuesday's Exam. Finished with refactoring.">
+      <created>1633748941427</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1633748941427</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,5 +192,29 @@
     <MESSAGE value="Tuesday's Exam. Made some refactoring but not finished with that" />
     <MESSAGE value="Tuesday's Exam. Finished with refactoring." />
     <option name="LAST_COMMIT_MESSAGE" value="Tuesday's Exam. Finished with refactoring." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/Counter/Counter.tsx</url>
+          <line>46</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/Counter/Counter.tsx</url>
+          <line>47</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/Counter/Counter.tsx</url>
+          <line>48</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

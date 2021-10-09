@@ -8,7 +8,7 @@ export const Counter = () => {
     let [disableInc, setDisableInc] = useState<boolean>(false)
     let [disableReset, setDisableReset] = useState<boolean>(true)
     useEffect(() => {
-        let incLS = localStorage.getItem('increment')
+        let incLS = localStorage.getItem('incrementMonday')
         if (incLS) {
             let incNew = JSON.parse(incLS)
             if (incNew === 0) {
@@ -49,14 +49,14 @@ export const Counter = () => {
         if (inc === 1) {
             setDisableReset(false)
         }
-        localStorage.setItem('increment', JSON.stringify(inc))
+        localStorage.setItem('incrementMonday', JSON.stringify(inc))
     }
 
     const resetFunction = () => {
         setInc(0)
         setDisableInc(false)
         setDisableReset(true)
-        localStorage.setItem('increment', JSON.stringify(0))
+        localStorage.setItem('incrementMonday', JSON.stringify(0))
     }
 
     return (
