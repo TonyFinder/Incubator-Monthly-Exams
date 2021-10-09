@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Incubator-Monthly-Exams/static/css/main.2f3a08bd.chunk.css",
-    "main.js": "/Incubator-Monthly-Exams/static/js/main.d09e63a1.chunk.js",
-    "main.js.map": "/Incubator-Monthly-Exams/static/js/main.d09e63a1.chunk.js.map",
-    "runtime-main.js": "/Incubator-Monthly-Exams/static/js/runtime-main.5bddcaa6.js",
-    "runtime-main.js.map": "/Incubator-Monthly-Exams/static/js/runtime-main.5bddcaa6.js.map",
-    "static/js/2.d065dbef.chunk.js": "/Incubator-Monthly-Exams/static/js/2.d065dbef.chunk.js",
-    "static/js/2.d065dbef.chunk.js.map": "/Incubator-Monthly-Exams/static/js/2.d065dbef.chunk.js.map",
-    "static/js/3.8c8fa842.chunk.js": "/Incubator-Monthly-Exams/static/js/3.8c8fa842.chunk.js",
-    "static/js/3.8c8fa842.chunk.js.map": "/Incubator-Monthly-Exams/static/js/3.8c8fa842.chunk.js.map",
+    "main.css": "/Incubator-Monthly-Exams/static/css/main.e348d49e.chunk.css",
+    "main.js": "/Incubator-Monthly-Exams/static/js/main.d7240156.chunk.js",
+    "main.js.map": "/Incubator-Monthly-Exams/static/js/main.d7240156.chunk.js.map",
+    "runtime-main.js": "/Incubator-Monthly-Exams/static/js/runtime-main.7379e82c.js",
+    "runtime-main.js.map": "/Incubator-Monthly-Exams/static/js/runtime-main.7379e82c.js.map",
+    "static/js/2.f9dc41fc.chunk.js": "/Incubator-Monthly-Exams/static/js/2.f9dc41fc.chunk.js",
+    "static/js/2.f9dc41fc.chunk.js.map": "/Incubator-Monthly-Exams/static/js/2.f9dc41fc.chunk.js.map",
+    "static/js/3.42bff101.chunk.js": "/Incubator-Monthly-Exams/static/js/3.42bff101.chunk.js",
+    "static/js/3.42bff101.chunk.js.map": "/Incubator-Monthly-Exams/static/js/3.42bff101.chunk.js.map",
     "index.html": "/Incubator-Monthly-Exams/index.html",
-    "static/css/main.2f3a08bd.chunk.css.map": "/Incubator-Monthly-Exams/static/css/main.2f3a08bd.chunk.css.map",
-    "static/js/2.d065dbef.chunk.js.LICENSE.txt": "/Incubator-Monthly-Exams/static/js/2.d065dbef.chunk.js.LICENSE.txt"
+    "static/css/main.e348d49e.chunk.css.map": "/Incubator-Monthly-Exams/static/css/main.e348d49e.chunk.css.map",
+    "static/js/2.f9dc41fc.chunk.js.LICENSE.txt": "/Incubator-Monthly-Exams/static/js/2.f9dc41fc.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.5bddcaa6.js",
-    "static/js/2.d065dbef.chunk.js",
-    "static/css/main.2f3a08bd.chunk.css",
-    "static/js/main.d09e63a1.chunk.js"
+    "static/js/runtime-main.7379e82c.js",
+    "static/js/2.f9dc41fc.chunk.js",
+    "static/css/main.e348d49e.chunk.css",
+    "static/js/main.d7240156.chunk.js"
   ]
 }
