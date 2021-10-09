@@ -5,8 +5,8 @@ import {Input} from '../Input/Input';
 type SetDisplayPropsType = {
     start: number
     max: number
-    onChangeMax: (max: number) => void
-    onChangeStart: (start: number) => void
+    onChangeMax: (value: number) => void
+    onChangeStart: (value: number) => void
 }
 
 export const SetDisplay = (props: SetDisplayPropsType) => {

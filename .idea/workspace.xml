@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="69e077c8-d74c-4491-ad36-36cfd18219ac" name="Default Changelist" comment="Tuesday's Exam is finished. Some refactoring is needed.">
-      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/Input/Input.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/Input/Input.tsx" afterDir="false" />
+    <list default="true" id="69e077c8-d74c-4491-ad36-36cfd18219ac" name="Default Changelist" comment="Tuesday's Exam. Finished with refactoring.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/Counter/Counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/Counter/Counter.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/SetDisplay/SetDisplay.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/MonthlyExams/TuesdayFirstVersion/Components/SetDisplay/SetDisplay.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +90,7 @@
       <workItem from="1633404763576" duration="3931000" />
       <workItem from="1633478448511" duration="85000" />
       <workItem from="1633478613142" duration="91000" />
-      <workItem from="1633478815271" duration="57794000" />
+      <workItem from="1633478815271" duration="62950000" />
     </task>
     <task id="LOCAL-00001" summary="Created and moved directories for each week exams">
       <created>1633479508689</created>
@@ -135,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633589808092</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Tuesday's Exam. Made some refactoring but not finished with that">
+      <created>1633607831094</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1633607831094</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +166,8 @@
     <MESSAGE value="Added CounterDisplay component" />
     <MESSAGE value="Added Tuesday's Exam. Not finished." />
     <MESSAGE value="Tuesday's Exam is finished. Some refactoring is needed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Tuesday's Exam is finished. Some refactoring is needed." />
+    <MESSAGE value="Tuesday's Exam. Made some refactoring but not finished with that" />
+    <MESSAGE value="Tuesday's Exam. Finished with refactoring." />
+    <option name="LAST_COMMIT_MESSAGE" value="Tuesday's Exam. Finished with refactoring." />
   </component>
 </project>

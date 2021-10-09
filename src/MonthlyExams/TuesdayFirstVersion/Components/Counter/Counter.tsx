@@ -37,10 +37,6 @@ export const Counter = () => {
         setDisableInc(true)
         setDisableReset(true)
     }
-    const setSetOn = () => {
-        setDisableSet(false)
-        setIncOffResetOff()
-    }
     const setOffForAll = () => {
         setIncOffResetOff()
         setDisableSet(true)
@@ -91,17 +87,16 @@ export const Counter = () => {
         localStorage.setItem('incrementTuesday', JSON.stringify(start))
     }
 
-    const onChangeMax = (max: number) => {
-        setMax(max)
+    const onChangeHandler = (valueStart: number, valueMax: number) => {
         let startValue = localStorage.getItem('startValue')
         let maxValue = localStorage.getItem('maxValue')
-        if ((startValue === start.toString()) && (maxValue === max.toString())) {
+        if ((startValue === valueStart.toString()) && (maxValue === valueMax.toString())) {
             buttonsSettingsForIncReset()
             setDisableSet(true)
             setError(false)
             return
         }
-        if (max <= 0 || max <= start || start < 0 || max === start) {
+        if (valueMax <= 0 || valueMax <= valueStart || valueStart < 0 || valueMax === valueStart) {
             setError(true)
             setOffForAll()
             return
@@ -111,25 +106,14 @@ export const Counter = () => {
             setError(false)
         }
     }
-    const onChangeStart = (start: number) => {
-        setStart(start)
-        let startValue = localStorage.getItem('startValue')
-        let maxValue = localStorage.getItem('maxValue')
-        if ((startValue === start.toString()) && (maxValue === max.toString())) {
-            buttonsSettingsForIncReset()
-            setDisableSet(true)
-            setError(false)
-            return
-        }
-        if (max <= 0 || max <= start || start < 0 || max === start) {
-            setError(true)
-            setOffForAll()
-            return
-        } else {
-            setDisableSet(false)
-            setIncOffResetOff()
-            setError(false)
-        }
+
+    const onChangeMax = (value: number) => {
+        setMax(value)
+        onChangeHandler(start, value)
+    }
+    const onChangeStart = (value: number) => {
+        setStart(value)
+        onChangeHandler(value, max)
     }
     const setFunction = () => {
         localStorage.setItem('maxValue', JSON.stringify(max))
@@ -138,7 +122,6 @@ export const Counter = () => {
         setInc(start)
         setDisableSet(true)
         setIncOnResetOff()
-
     }
 
     return (
