@@ -1,0 +1,20 @@
+.fieldSeparate {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.number {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.inputCorrection {
+    border-radius: 4px;
+    width: 100px;
+    text-align: center;
+}
+
+.redBackground {
+    background-color: palevioletred;
+}
