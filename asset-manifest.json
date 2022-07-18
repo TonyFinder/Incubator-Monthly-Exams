@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Incubator-Monthly-Exams/static/css/main.27c60bc8.chunk.css",
-    "main.js": "/Incubator-Monthly-Exams/static/js/main.304e13b6.chunk.js",
-    "main.js.map": "/Incubator-Monthly-Exams/static/js/main.304e13b6.chunk.js.map",
-    "runtime-main.js": "/Incubator-Monthly-Exams/static/js/runtime-main.970a6e28.js",
-    "runtime-main.js.map": "/Incubator-Monthly-Exams/static/js/runtime-main.970a6e28.js.map",
-    "static/js/2.f5a40a1e.chunk.js": "/Incubator-Monthly-Exams/static/js/2.f5a40a1e.chunk.js",
-    "static/js/2.f5a40a1e.chunk.js.map": "/Incubator-Monthly-Exams/static/js/2.f5a40a1e.chunk.js.map",
-    "static/js/3.6dc3b096.chunk.js": "/Incubator-Monthly-Exams/static/js/3.6dc3b096.chunk.js",
-    "static/js/3.6dc3b096.chunk.js.map": "/Incubator-Monthly-Exams/static/js/3.6dc3b096.chunk.js.map",
-    "index.html": "/Incubator-Monthly-Exams/index.html",
-    "static/css/main.27c60bc8.chunk.css.map": "/Incubator-Monthly-Exams/static/css/main.27c60bc8.chunk.css.map",
-    "static/js/2.f5a40a1e.chunk.js.LICENSE.txt": "/Incubator-Monthly-Exams/static/js/2.f5a40a1e.chunk.js.LICENSE.txt"
+    "main.css": "/Studying-monthly-exams/static/css/main.27c60bc8.chunk.css",
+    "main.js": "/Studying-monthly-exams/static/js/main.304e13b6.chunk.js",
+    "main.js.map": "/Studying-monthly-exams/static/js/main.304e13b6.chunk.js.map",
+    "runtime-main.js": "/Studying-monthly-exams/static/js/runtime-main.7ea50772.js",
+    "runtime-main.js.map": "/Studying-monthly-exams/static/js/runtime-main.7ea50772.js.map",
+    "static/js/2.f5a40a1e.chunk.js": "/Studying-monthly-exams/static/js/2.f5a40a1e.chunk.js",
+    "static/js/2.f5a40a1e.chunk.js.map": "/Studying-monthly-exams/static/js/2.f5a40a1e.chunk.js.map",
+    "static/js/3.6dc3b096.chunk.js": "/Studying-monthly-exams/static/js/3.6dc3b096.chunk.js",
+    "static/js/3.6dc3b096.chunk.js.map": "/Studying-monthly-exams/static/js/3.6dc3b096.chunk.js.map",
+    "index.html": "/Studying-monthly-exams/index.html",
+    "static/css/main.27c60bc8.chunk.css.map": "/Studying-monthly-exams/static/css/main.27c60bc8.chunk.css.map",
+    "static/js/2.f5a40a1e.chunk.js.LICENSE.txt": "/Studying-monthly-exams/static/js/2.f5a40a1e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.970a6e28.js",
+    "static/js/runtime-main.7ea50772.js",
     "static/js/2.f5a40a1e.chunk.js",
     "static/css/main.27c60bc8.chunk.css",
     "static/js/main.304e13b6.chunk.js"
